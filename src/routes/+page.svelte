@@ -84,6 +84,8 @@
         white-space: nowrap;
         text-align: center;
         color: color-mix(in srgb, var(--color-brand-mid) 10%, transparent);
+        z-index: 1;
+        background: transparent;
     }
 
     h2{
@@ -97,6 +99,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: transparent;
+        z-index: 2;
         span{
             background: transparent;
             font-family: var(--font-primary);
@@ -125,15 +128,15 @@
     }
 
     .neon{
-        transition: filter 0.3s ease, color 0.3s ease;
+        transition: filter 0.5s ease;
         color: var(--color-brand-mid);
         filter: drop-shadow(0 0 1px var(--color-brand-mid))
-                drop-shadow(0 0 4px var(--color-brand-mid))
-                drop-shadow(0 0 10px var(--color-brand-mid));
+            drop-shadow(0 0 10px var(--color-brand-mid));
         &:hover{
             filter: drop-shadow(0 0 2px var(--color-brand-mid))
-                    drop-shadow(0 0 8px var(--color-brand-mid))
-                    drop-shadow(0 0 16px var(--color-brand-mid));
+                
+                drop-shadow(0 0 16px var(--color-brand-mid));
+            cursor: pointer;
         }
     }
 </style>
