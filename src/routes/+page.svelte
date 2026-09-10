@@ -8,12 +8,12 @@
     import Crosses from "$lib/components/CrossPattern.svelte";
 </script>
 
-<!--
+
 <Crosses />
--->
-<Corner class="top-right" />
-<Corner class="bottom-right" />
-<Corner class="bottom-left" />
+
+<Corner class="corner-top-right" />
+<Corner class="corner-bottom-right" />
+<Corner class="corner-bottom-left" />
 
 <section class="system-info">
     <p>USER ID: #{person.id}</p>
@@ -33,6 +33,7 @@
 
 
 <style>
+/*https://svelte.dev/docs/svelte/global-styles*/
     :global(body){
         height: 100vh;
         overflow: hidden;
@@ -58,20 +59,20 @@
             background: transparent;
         }
     }
-    :global(.top-right){
+    :global(.corner-top-right){
         position: absolute;
         top: var(--spacing-lg);
         right: var(--spacing-lg);
         transform: rotate(-180deg);
     }
-    :global(.bottom-right){
+    :global(.corner-bottom-right){
         position: absolute;
         bottom: var(--spacing-lg);
         right: var(--spacing-lg);
         transform: scaleX(-1);
 
     }
-    :global(.bottom-left){
+    :global(.corner-bottom-left){
         position: absolute;
         bottom: var(--spacing-lg);
         left: var(--spacing-lg);
