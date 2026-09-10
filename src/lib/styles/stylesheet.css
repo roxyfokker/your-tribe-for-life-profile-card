@@ -245,15 +245,12 @@ a {
 body {
     color:                       var(--text);
     font-family:                 var(--font-primary);
-    letter-spacing:              var(--letter-spacing-normal);
-    line-height:                 var(--line-height-body);
 }
+
 h1, h2, h3, h4, h5 {
     color:                       var(--text);
     font-family:                 var(--font-primary);
     font-weight:                 bold;
-    letter-spacing:              var(--letter-spacing-wide);
-    line-height:                 var(--line-height-heading);
 }
 
 
@@ -266,5 +263,4 @@ h5 { font-size:                  var(--font-size-h5);}
 p {  
     font-size:                   var(--font-size-body-md);
     max-width:                   70ch;
-    margin:                      0 0 var(--spacing-md) 0;
 }
