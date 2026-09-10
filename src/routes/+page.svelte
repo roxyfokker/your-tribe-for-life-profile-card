@@ -5,8 +5,10 @@
     let roleName = $derived(data.person.role[0]?.role_id?.name);
 
     import Corner from "$lib/components/CornerPattern.svelte"
+    import Crosses from "$lib/components/CrossPattern.svelte";
 </script>
 
+<Crosses />
 
 <section class="system-info">
     <p>USER ID: #{person.id}</p>
@@ -27,6 +29,7 @@
             letter-spacing: 15%;
             filter: blur(0.06rem);
             font-size: var(--font-size-body-xs);
+            background: transparent;
         }
     }
 </style>
