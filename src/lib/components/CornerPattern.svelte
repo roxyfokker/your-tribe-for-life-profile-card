@@ -1,8 +1,8 @@
 <script>
-
+    let { class: className = "" } = $props();
 </script>
 
-<div class="corner">
+<div class="corner {className}">
     <span></span>
     <span></span>
     <span></span>
@@ -12,22 +12,21 @@
     <span></span>
 </div>
 
+
 <style>
     .corner{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        gap: var(--spacing-xs);
-        row-gap: var(--spacing-xs);
-        column-gap: var(--spacing-xs);
-        width: 6rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: var(--spacing-2xs);
+        column-gap: var(--spacing-2xs);
 
         span{
             background-color: var(--color-brand-mid);
             aspect-ratio: 1;
             border-radius: var(--border-radius-2xs);
-            width: 1rem;
-            height: 1rem;
+            width: 0.9rem;
+            height: 0.9rem;
             filter: blur(0.03rem);
         }
 
