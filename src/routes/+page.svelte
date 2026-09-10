@@ -3,13 +3,19 @@
     const person = data.person;
 
     let roleName = $derived(data.person.role[0]?.role_id?.name);
+
+    import Corner from "$lib/components/CornerPattern.svelte"
 </script>
+
 
 <section class="system-info">
     <p>USER ID: #{person.id}</p>
     <p>NAME: {person.name}</p>
     <p>ROLE: {roleName}</p>
 </section>
+
+<Corner />
+
 
 <style>
     .system-info{
