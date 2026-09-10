@@ -141,8 +141,8 @@
     --color-positive-lightest:   var(--palette-positive-100);
 
 
-    --text:                      light-dark(var(--color-neutral-darkest), var(--color-neutral-lightest));
-    --text-inverted:             light-dark(var(--color-neutral-lightest),var(--color-neutral-darkest) );
+    /*--text:                      light-dark(var(--color-brand-mid), var(--color-neutral-lightest));*/
+    /*--text-inverted:             light-dark(var(--color-neutral-lightest),var(--color-neutral-darkest) );*/
     --background:                light-dark(var(--color-neutral-darkest),var(--color-neutral-lightest) );
 
     /* Padding / Spacing ============================================*/
@@ -243,12 +243,12 @@ a {
 }
 
 body {
-    color:                       var(--text);
+    color:                       var(--color-brand-mid);
     font-family:                 var(--font-primary);
 }
 
 h1, h2, h3, h4, h5 {
-    color:                       var(--text);
+    color:                       var(--color-brand-mid);
     font-family:                 var(--font-primary);
     font-weight:                 bold;
 }
