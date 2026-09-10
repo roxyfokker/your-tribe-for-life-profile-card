@@ -5,6 +5,15 @@ Hover optioneel
 @render
 -->
 
-<script></script>
+<script>
 
-<style></style>
+</script>
+
+<p></p>
+
+<style>
+    .neon{
+        transition: filter 0.3s ease, color 0.3s ease;
+
+    }
+</style>

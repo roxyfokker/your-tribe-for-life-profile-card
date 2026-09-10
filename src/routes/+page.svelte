@@ -22,7 +22,7 @@
 </section>
 
 <h1>Roxy Fokker</h1>
-<h2>
+<h2 class="neon">
     <span>Enter </span>
     <span>The</span> 
     <span>Profile</span>
@@ -122,5 +122,18 @@
         top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .neon{
+        transition: filter 0.3s ease, color 0.3s ease;
+        color: var(--color-brand-mid);
+        filter: drop-shadow(0 0 1px var(--color-brand-mid))
+                drop-shadow(0 0 4px var(--color-brand-mid))
+                drop-shadow(0 0 10px var(--color-brand-mid));
+        &:hover{
+            filter: drop-shadow(0 0 2px var(--color-brand-mid))
+                    drop-shadow(0 0 8px var(--color-brand-mid))
+                    drop-shadow(0 0 16px var(--color-brand-mid));
+        }
     }
 </style>
