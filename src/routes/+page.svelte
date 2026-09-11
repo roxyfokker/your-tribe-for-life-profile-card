@@ -6,8 +6,17 @@
 
     import Corner from "$lib/components/CornerPattern.svelte"
     import Crosses from "$lib/components/CrossPattern.svelte";
+
+    // https://svelte.dev/docs/svelte/svelte-window
+    // hier nog een animatie op de p toevoegen
+    function handleKeydown(event) {
+        if (event.key === "Enter") {
+            window.location.href = "/profile";
+        }
+    }
 </script>
 
+<svelte:window onkeydown={handleKeydown} />
 
 <Crosses />
 
@@ -15,8 +24,8 @@
 <Corner class="corner-bottom-right" />
 <Corner class="corner-bottom-left" />
 
-<section class="system-info">
-    <p>USER ID: #{person.id}</p>
+<section class="system-info container">
+    <p class="text">USER ID: #{person.id}</p>
     <p>NAME: {person.name}</p>
     <p>ROLE: {roleName}</p>
 </section>
@@ -138,5 +147,26 @@
                 drop-shadow(0 0 16px var(--color-brand-mid));
             cursor: pointer;
         }
+    }
+
+    .container{
+        display: inline-block;
+        .text{
+            border-right: solid 0.1rem;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(18),
+            cursor .4s step-end infinite alternate;
+        }
+    }
+    @keyframes cursor{
+        50% {border-color: transparent;}
+    }
+    @keyframes hide-cursor {
+        to { border-right-color: transparent; }
+    }
+    @keyframes typing{
+        from {width: 0}
     }
 </style>
