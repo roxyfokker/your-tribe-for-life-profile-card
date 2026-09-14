@@ -41,54 +41,72 @@
 :root {
     /* Kleuren deze niet gebruiken in style.css alleen voor variabelen */
     /* Brand */
-    --palette-brand-900:         #3A1258;
-    --palette-brand-800:         #46166b;
-    --palette-brand-700:         #5A2A86;
-    --palette-brand-600:         #8B6AA0;
-    --palette-brand-500:         #00FE67;
-    --palette-brand-400:         #8B6AA0;
-    --palette-brand-300:         #B8A9C6;
-    --palette-brand-200:         #C7B8D2;
-    --palette-brand-100:         #ECE7F0;
+    --palette-brand-900:         #0A2810;
+    --palette-brand-800:         #0F3D18;
+    --palette-brand-700:         #165014;
+    --palette-brand-600:         #047B00;
+    --palette-brand-500:         #01A00B;
+    --palette-brand-400:         #05FB06;
+    --palette-brand-300:         #00FE67;
+    --palette-brand-200:         #86FFB7;
+    --palette-brand-100:         #C1FFDA;
 
-    /* Secondary */
-    --palette-secondary-900:     #431AB7;
-    --palette-secondary-800:     #431AB7;
-    --palette-secondary-700:     #431AB7;
-    --palette-secondary-600:     #4F1ED7;
-    --palette-secondary-500:     #6940DD;
-    --palette-secondary-400:     #6940DD;
-    --palette-secondary-300:     #6940DD;
-    --palette-secondary-200:     #6940DD;
-    --palette-secondary-100:     #6940DD;
-    
     /* Neutraal */
     --palette-neutral-900:       #000000;
-    --palette-neutral-800:       #212121;
-    --palette-neutral-700:       #8f8f8f;
-    --palette-neutral-600:       #A0A0A0;
-    --palette-neutral-500:       #A0A0A0;
-    --palette-neutral-400:       #A0A0A0;
-    --palette-neutral-300:       #d9d9d9;
-    --palette-neutral-200:       #E5E5E5;
-    --palette-neutral-100:       #f2f2f2;
-    --palette-neutral-0:         #ffffff;
-    
-    /* Signaal: fout */
-    --palette-danger-700:        #FF0000;
-    --palette-danger-300:        #FFA0A0;
-    --palette-danger-100:        #FFE5E5;
-    
-    /* Signaal: waarschuwing */
-    --palette-caution-700:       #FFBB00;
-    --palette-caution-300:       #FFE5A0;
-    --palette-caution-100:       #FFF8E5;
-    
-    /* Signaal: succes */
-    --palette-positive-700:      #11A407;
-    --palette-positive-300:      #A6DDA2;
-    --palette-positive-100:      #E6F6E5;
+    --palette-neutral-800:       #0F0F0F;
+    --palette-neutral-700:       #151515;
+    --palette-neutral-600:       #212121;
+    --palette-neutral-500:       #353433;
+    --palette-neutral-400:       #4E4E4E;
+    --palette-neutral-300:       #8D8D8D;
+    --palette-neutral-200:       #B1B1B1;
+    --palette-neutral-100:       #FFFFFF;
 }
+:root [data-theme="blue"] {
+    --palette-brand-900:         #0A202F;
+    --palette-brand-800:         #0F3045;
+    --palette-brand-700:         #12405C;
+    --palette-brand-600:         #00579B;
+    --palette-brand-500:         #0072C6;
+    --palette-brand-400:         #0099FF;
+    --palette-brand-300:         #00CFFF;
+    --palette-brand-200:         #86E8FF;
+    --palette-brand-100:         #C7EEF7;
+}
+:root [data-theme="red"] {
+    --palette-brand-900:         #2D0A09;
+    --palette-brand-800:         #45100F;
+    --palette-brand-700:         #641515;
+    --palette-brand-600:         #980000;
+    --palette-brand-500:         #C90A0A;
+    --palette-brand-400:         #FF0808;
+    --palette-brand-300:         #FF3030;
+    --palette-brand-200:         #FF8F8F;
+    --palette-brand-100:         #F9C5C5;
+}
+:root [data-theme="yellow"] {
+    --palette-brand-900:         #2D2909;
+    --palette-brand-800:         #47400F;
+    --palette-brand-700:         #665C16;
+    --palette-brand-600:         #A68F00;
+    --palette-brand-500:         #D4B800;
+    --palette-brand-400:         #FFEA00;
+    --palette-brand-300:         #FFD600;
+    --palette-brand-200:         #FFE66D;
+    --palette-brand-100:         #FFF3B0;
+}
+:root [data-theme="orange"] {
+    --palette-brand-900:         #38110B;
+    --palette-brand-800:         #501A12;
+    --palette-brand-700:         #7A2114;
+    --palette-brand-600:         #A62E1C;
+    --palette-brand-500:         #D53A24;
+    --palette-brand-400:         #FF5A1F;
+    --palette-brand-300:         #FF8300;
+    --palette-brand-200:         #FFAA33;
+    --palette-brand-100:         #F9C577;
+}
+
 :root {
     /* Kleuren ===================================================================================*/
     /* Brand */
