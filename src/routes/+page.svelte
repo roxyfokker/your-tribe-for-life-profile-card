@@ -26,12 +26,12 @@
 <Corner class="corner-bottom-left" />
 
 <section class="system-info">
-    <TypeEffect text={`USER ID: #${person.id}`} class="system-info-text"/>
+    <TypeEffect text={`USER ID: #${person.id}`} class="system-info-text" />
     <TypeEffect text={`NAME: ${person.name}`} class="system-info-text" />
     <TypeEffect text={`ROLE: ${roleName}`} class="system-info-text" />
 </section>
 
-<h1 class="glitch">Roxy Fokker</h1>
+<h1>Roxy Fokker</h1>
 <h2 class="neon">
     <span>Enter </span>
     <span>The</span> 
@@ -39,7 +39,7 @@
 </h2>
 <p class="loading-text">LOADING PERSONAL DATA...</p>
 
-<p class="continue-text glitch">PRESS ENTER TO CONTINUE_</p>
+<p class="continue-text">PRESS ENTER TO CONTINUE_</p>
 
 
 <style>

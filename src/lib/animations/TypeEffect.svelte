@@ -21,13 +21,13 @@
     }
     .text::before{
         background-color: var(--background);
-        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards; /*dit nummer berkenen met javascript*/
+        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards; 
     }
     .text::after{
         width: 0.125em;
         background-color: var(--color-brand-mid);
         animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-        blink 750ms steps(var(--typewriterCharacters)) calc(var(--typewriterSpeed) + 1s) forwards; /*dit nummer berkenen met javascript*/
+        blink 750ms steps(var(--typewriterCharacters)) calc(var(--typewriterSpeed) + 1s) forwards;
     }
 
     @keyframes typewriter{
