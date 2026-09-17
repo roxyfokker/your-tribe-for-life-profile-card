@@ -1,8 +1,8 @@
 <script>
-    let { text } = $props();
+    let { text, class: className } = $props();
 </script>
 
-<p class="text" style="--typewriterCharacters: {text.length};">
+<p class="text {className}" style="--typewriterCharacters: {text.length}; ">
     {text}
 </p>
 

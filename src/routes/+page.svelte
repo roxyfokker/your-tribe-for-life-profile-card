@@ -25,10 +25,10 @@
 <Corner class="corner-bottom-right" />
 <Corner class="corner-bottom-left" />
 
-<section class="system-info container">
-    <TypeEffect text={'USER ID: #${person.id}'}/>
-    <TypeEffect text={'NAME: ${person.name}'}/>
-    <TypeEffect text={'ROLE: ${roleName}'}/>
+<section class="system-info">
+    <TypeEffect text={`USER ID: #${person.id}`} class="system-info-text"/>
+    <TypeEffect text={`NAME: ${person.name}`} class="system-info-text" />
+    <TypeEffect text={`ROLE: ${roleName}`} class="system-info-text" />
 </section>
 
 <h1 class="glitch">Roxy Fokker</h1>
@@ -53,21 +53,22 @@
         align-items: center;
         margin: 0;
     }
+    
     .system-info{ 
         position: absolute;
         top: var(--spacing-lg);
-        left: var(--spacing-lg);
-        p{
-           
-            font-family: var(--font-primary);
-            color: var(--color-brand-mid);
-            line-height: -1rem;
-            text-transform: uppercase;
-            letter-spacing: 15%;
-            filter: blur(0.06rem);
-            font-size: var(--font-size-body-sm);
-            background: transparent;
-        }
+        left: var(--spacing-lg);    
+    }
+    /*https://stackoverflow.com/questions/76960520/svelte-styling-the-child-component-from-parent-component-without-using-global*/
+    .system-info :global(.system-info-text){
+        font-family: var(--font-primary);
+        color: var(--color-brand-mid);
+        line-height: -1rem;
+        text-transform: uppercase;
+        letter-spacing: 15%;
+        filter: blur(0.06rem);
+        font-size: var(--font-size-body-sm);
+        background: transparent;
     }
     :global(.corner-top-right){
         position: absolute;
