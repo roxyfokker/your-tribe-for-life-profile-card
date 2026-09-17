@@ -4,6 +4,7 @@
 
     let roleName = $derived(data.person.role[0]?.role_id?.name);
 
+    import TypeEffect from "$lib/animations/TypeEffect.svelte";
     import Corner from "$lib/components/CornerPattern.svelte"
     import Crosses from "$lib/components/CrossPattern.svelte";
 
@@ -25,9 +26,9 @@
 <Corner class="corner-bottom-left" />
 
 <section class="system-info container">
-    <p class="text">USER ID: #{person.id}</p>
-    <p>NAME: {person.name}</p>
-    <p>ROLE: {roleName}</p>
+    <TypeEffect text={'USER ID: #${person.id}'}/>
+    <TypeEffect text={'NAME: ${person.name}'}/>
+    <TypeEffect text={'ROLE: ${roleName}'}/>
 </section>
 
 <h1 class="glitch">Roxy Fokker</h1>
@@ -134,43 +135,6 @@
         top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-    
-    /*typewriter effect*/
-    :root{
-        --typewriterSpeed: 2s;
-        --typewriterCharacters: 13;
-    }
-    .text{
-        position: relative;
-        width: max-content;
-    }
-    .text::before,
-    .text::after{
-        content: '';
-        position: absolute;
-        inset: 0;
-    }
-    .text::before{
-        background-color: var(--background);
-        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards; /*dit nummer berkenen met javascript*/
-    }
-    .text::after{
-        width: 0.125em;
-        background-color: var(--color-brand-mid);
-        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-        blink 750ms steps(var(--typewriterCharacters)) calc(var(--typewriterSpeed) + 1s) forwards; /*dit nummer berkenen met javascript*/
-    }
-
-    @keyframes typewriter{
-        to{ 
-            left: 100%;
-        }
-    }
-    @keyframes blink{
-        to{
-           background: transparent;
-        }
     }
 
 </style>
