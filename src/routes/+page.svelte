@@ -44,7 +44,6 @@
 
 <p class="continue-text">PRESS ENTER TO CONTINUE_</p>
 
-<p>{person.bio}</p>
 <style>
 /*https://svelte.dev/docs/svelte/global-styles*/
     :global(body){

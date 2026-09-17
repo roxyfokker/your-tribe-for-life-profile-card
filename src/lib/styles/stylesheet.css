@@ -161,7 +161,7 @@
 
     /*--text:                      light-dark(var(--color-brand-mid), var(--color-neutral-lightest));*/
     /*--text-inverted:             light-dark(var(--color-neutral-lightest),var(--color-neutral-darkest) );*/
-    --background:                light-dark(var(--color-neutral-darkest),var(--color-neutral-lightest) );
+    --background:                var(--color-neutral-darkest);
 
     /* Padding / Spacing ============================================*/
     --spacing-3xs:               0.125rem;
