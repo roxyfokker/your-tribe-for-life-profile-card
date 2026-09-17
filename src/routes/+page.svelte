@@ -7,6 +7,7 @@
     import TypeEffect from "$lib/animations/TypeEffect.svelte";
     import Corner from "$lib/components/CornerPattern.svelte"
     import Crosses from "$lib/components/CrossPattern.svelte";
+    import ThemePicker from "$lib/components/ThemePicker.svelte"
 
     // https://svelte.dev/docs/svelte/svelte-window
     // hier nog een animatie op de p toevoegen
@@ -31,6 +32,8 @@
     <TypeEffect text={`ROLE: ${roleName}`} class="system-info-text" />
 </section>
 
+<ThemePicker />
+
 <h1>Roxy Fokker</h1>
 <h2 class="neon">
     <span>Enter </span>
@@ -41,7 +44,7 @@
 
 <p class="continue-text">PRESS ENTER TO CONTINUE_</p>
 
-
+<p>{person.bio}</p>
 <style>
 /*https://svelte.dev/docs/svelte/global-styles*/
     :global(body){
