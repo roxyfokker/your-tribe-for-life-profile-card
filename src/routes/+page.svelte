@@ -135,19 +135,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    .neon{
-        transition: filter 0.5s ease;
-        color: var(--color-brand-mid);
-        filter: drop-shadow(0 0 1px var(--color-brand-mid))
-            drop-shadow(0 0 10px var(--color-brand-mid));
-        &:hover{
-            filter: drop-shadow(0 0 2px var(--color-brand-mid))
-                
-                drop-shadow(0 0 16px var(--color-brand-mid));
-            cursor: pointer;
-        }
-    }
+    
     /*typewriter effect*/
     :root{
         --typewriterSpeed: 2s;
@@ -185,63 +173,4 @@
         }
     }
 
-    /*Glitch effect*/
-    :root{
-        --glitch-shadow-opacity: 75%;
-        --glitch-shadow-1: var(--color-brand-dark);
-        --glitch-shadow-2: var(--color-brand-mid);
-        --glitch-shadow-3: var(--color-brand-darker);
-    }
-    .glitch{
-        text-shadow: 
-        0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-        -0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-        0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        animation: glitch 500ms infinite;
-    }
-
-    @keyframes glitch{
-        0%{
-            text-shadow: 
-            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            -0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-        14%{
-            text-shadow: 
-            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            -0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-        15%{
-            text-shadow: 
-            -0.05em -0.025em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            0.025em 0.025em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-            -0.05em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-        49%{
-            text-shadow: 
-            -0.05em -0.025em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            0.025em 0.025em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-            -0.05em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-        50%{
-            text-shadow: 
-            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-            0 -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-        99%{
-            text-shadow: 
-            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-            0 -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-        100%{
-            text-shadow: 
-            -0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
-            -0.025em -0.025em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
-           - 0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
-        }
-    }
 </style>
