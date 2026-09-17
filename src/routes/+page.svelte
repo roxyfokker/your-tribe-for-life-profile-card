@@ -148,25 +148,40 @@
             cursor: pointer;
         }
     }
+    /*typewriter effect*/
+    :root{
+        --typewriterSpeed: 2s;
+        --typewriterCharacters: 13;
+    }
+    .text{
+        position: relative;
+        width: max-content;
+    }
+    .text::before,
+    .text::after{
+        content: '';
+        position: absolute;
+        inset: 0;
+    }
+    .text::before{
+        background-color: var(--background);
+        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards; /*dit nummer berkenen met javascript*/
+    }
+    .text::after{
+        width: 0.125em;
+        background-color: var(--color-brand-mid);
+        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(var(--typewriterCharacters)) calc(var(--typewriterSpeed) + 1s) forwards; /*dit nummer berkenen met javascript*/
+    }
 
-    .container{
-        display: inline-block;
-        .text{
-            border-right: solid 0.1rem;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(18),
-            cursor .4s step-end infinite alternate;
+    @keyframes typewriter{
+        to{ 
+            left: 100%;
         }
     }
-    @keyframes cursor{
-        50% {border-color: transparent;}
-    }
-    @keyframes hide-cursor {
-        to { border-right-color: transparent; }
-    }
-    @keyframes typing{
-        from {width: 0}
+    @keyframes blink{
+        to{
+           background: transparent;
+        }
     }
 </style>
