@@ -30,7 +30,7 @@
     <p>ROLE: {roleName}</p>
 </section>
 
-<h1>Roxy Fokker</h1>
+<h1 class="glitch">Roxy Fokker</h1>
 <h2 class="neon">
     <span>Enter </span>
     <span>The</span> 
@@ -38,7 +38,7 @@
 </h2>
 <p class="loading-text">LOADING PERSONAL DATA...</p>
 
-<p class="continue-text">PRESS ENTER TO CONTINUE_</p>
+<p class="continue-text glitch">PRESS ENTER TO CONTINUE_</p>
 
 
 <style>
@@ -182,6 +182,66 @@
     @keyframes blink{
         to{
            background: transparent;
+        }
+    }
+
+    /*Glitch effect*/
+    :root{
+        --glitch-shadow-opacity: 75%;
+        --glitch-shadow-1: var(--color-brand-dark);
+        --glitch-shadow-2: var(--color-brand-mid);
+        --glitch-shadow-3: var(--color-brand-darker);
+    }
+    .glitch{
+        text-shadow: 
+        0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+        -0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+        0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        animation: glitch 500ms infinite;
+    }
+
+    @keyframes glitch{
+        0%{
+            text-shadow: 
+            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            -0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        }
+        14%{
+            text-shadow: 
+            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            -0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        }
+        15%{
+            text-shadow: 
+            -0.05em -0.025em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            0.025em 0.025em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+            -0.05em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        }
+        49%{
+            text-shadow: 
+            -0.05em -0.025em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            0.025em 0.025em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+            -0.05em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        }
+        50%{
+            text-shadow: 
+            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+            0 -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        }
+        99%{
+            text-shadow: 
+            0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            0.05em 0 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+            0 -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
+        }
+        100%{
+            text-shadow: 
+            -0.025em 0.05em 0 color-mix(in srgb, var(--glitch-shadow-1) var(--glitch-shadow-opacity), transparent),
+            -0.025em -0.025em 0 color-mix(in srgb, var(--glitch-shadow-2) var(--glitch-shadow-opacity), transparent),
+           - 0.025em -0.05em 0 color-mix(in srgb, var(--glitch-shadow-3) var(--glitch-shadow-opacity), transparent);
         }
     }
 </style>
