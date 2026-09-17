@@ -5,20 +5,12 @@
     function setTheme(themeName) {
         activeTheme = themeName;
     }
+    
     $effect(() => {
         document.documentElement.setAttribute("data-theme", activeTheme);
     })
 </script>
-
-<!--
-<section class="theme-switcher">
-    <button data-theme="green" aria-pressed="true">Green</button>
-    <button data-theme="blue" aria-pressed="false">Blue</button>
-    <button data-theme="red" aria-pressed="false">Red</button>
-    <button data-theme="yellow" aria-pressed="false">Yellow</button>
-    <button data-theme="orange" aria-pressed="false">Orange</button>
-</section>
--->
+<!--https://fossheim.io/writing/posts/accessible-theme-picker-html-css-js/-->
 
 <section class="theme-switcher">
     {#each themes as themeName}

@@ -56,7 +56,6 @@
         align-items: center;
         margin: 0;
     }
-    
     .system-info{ 
         position: absolute;
         top: var(--spacing-lg);
